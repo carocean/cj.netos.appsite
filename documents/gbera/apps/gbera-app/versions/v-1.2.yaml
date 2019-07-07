@@ -1,0 +1,22 @@
+#从哪个版本派生，如果是第一个则为null
+#只所以不将配置拼成一个整体，是因为将来一个微应用会发布多个版本，不利于查询性能
+from: null
+theme: mytheme/1.2
+home: /dir1/dir2/page2.page
+#所有页共享的微站
+microsite:
+ host: http://news.163.com/tt/microapp1
+ token: xxxxx
+pages:
+  /dir1/page1.page:
+     display: display1@style1 
+  /dir1/dir2/page2.page:
+    #使用了当前主题的默认style
+     display: display2
+    #该页私有微站
+     microsite:
+       host: http://news.sina.com/tt/microapp1
+       token: xxxxx
+  /dir3/dir4/page5.page:
+     display: display1@style1 
+  
