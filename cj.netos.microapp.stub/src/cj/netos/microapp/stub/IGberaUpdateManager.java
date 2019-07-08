@@ -17,7 +17,7 @@ public interface IGberaUpdateManager {
 	@CjStubMethod(usage = "检查微应用的版本，并返回更新指令，版本为最新的微应用则忽略", command = "post")
 	@CjStubReturn(elementType = UpdateCommand.class, usage = "更新命令集合")
 	List<UpdateCommand> checkMicroAppVersions(
-			@CjStubInContentKey(key = "versions", usage = "移动端缓冲的版本集合") List<MicroappVersion> versions)
+			@CjStubInContentKey(key = "versions", usage = "移动端缓冲的版本集合",elementType = MicroappVersion.class) List<MicroappVersion> versions)
 			throws CircuitException;
 
 	@CjStubMethod(usage = "获取一个微应用")

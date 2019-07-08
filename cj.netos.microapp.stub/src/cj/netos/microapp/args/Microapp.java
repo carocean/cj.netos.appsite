@@ -3,6 +3,11 @@ package cj.netos.microapp.args;
 import java.util.Map;
 
 public class Microapp {
+	String name;
+	String title;
+	String desc;
+	String developer;
+	String applyVersion;
 	String from;
 	String theme;
 	String home;
@@ -37,6 +42,36 @@ public class Microapp {
 	}
 	public void setPages(Map<String, Micropage> pages) {
 		this.pages = pages;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getDesc() {
+		return desc;
+	}
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+	public String getDeveloper() {
+		return developer;
+	}
+	public void setDeveloper(String developer) {
+		this.developer = developer;
+	}
+	public String getApplyVersion() {
+		return applyVersion;
+	}
+	public void setApplyVersion(String applyVersion) {
+		this.applyVersion = applyVersion;
 	}
 	
 	

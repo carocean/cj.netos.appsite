@@ -59,7 +59,7 @@ public class GberaUpdateIS implements IGberaUpdateIS {
 			dirty.add(up);
 			return;
 		}
-		String vappFile = String.format("%sversions/%s.yaml", appPath, version);
+		String vappFile = String.format("%sversions/v-%s.yaml", appPath, version);
 		if (!fs.existsFile(vappFile)) {
 			UpdateCommand up = new UpdateCommand();
 			up.setCommand("D");
@@ -76,7 +76,7 @@ public class GberaUpdateIS implements IGberaUpdateIS {
 		Map<String, Object> conf = yaml.load(new String(b));
 		String applyVersion = conf.get("apply-version") + "";
 
-		vappFile = String.format("%sversions/%s.yaml", appPath, applyVersion);
+		vappFile = String.format("%sversions/v-%s.yaml", appPath, applyVersion);
 		if (!applyVersion.equals(version)) {
 			if (fs.existsFile(vappFile)) {// 如果指定版本不同且存在该版本则为新建版本
 				UpdateCommand up = new UpdateCommand();
@@ -135,6 +135,12 @@ public class GberaUpdateIS implements IGberaUpdateIS {
 			reader.close();
 			yaml = new Yaml();
 			Microapp app = yaml.loadAs(new String(b), Microapp.class);
+			app.setName(name);
+			app.setTitle(StringUtil.isEmpty(conf.get("title") + "") ? "" : conf.get("title") + "");
+			app.setDesc(StringUtil.isEmpty(conf.get("desc") + "") ? "" : conf.get("desc") + "");
+			app.setDeveloper(StringUtil.isEmpty(conf.get("developer") + "") ? "" : conf.get("developer") + "");
+			app.setApplyVersion(
+					StringUtil.isEmpty(conf.get("apply-version") + "") ? "" : conf.get("apply-version") + "");
 			return app;
 		} catch (FileNotFoundException e) {
 			throw new CircuitException("404", e);
@@ -148,18 +154,18 @@ public class GberaUpdateIS implements IGberaUpdateIS {
 		String appversionsPath = String.format("/apps/%s/versions", appnameWithoutVersion);
 		FileSystem fs = dbutils.fs();
 		DirectoryInfo dir = fs.dir(appversionsPath);
-		List<String> list=new ArrayList<String>();
-		if(!dir.exists()) {
+		List<String> list = new ArrayList<String>();
+		if (!dir.exists()) {
 			return list;
 		}
-		List<String> childs=dir.listFileNames();
-		for(String name :childs) {
-			if(!name.endsWith(".yaml")) {
+		List<String> childs = dir.listFileNames();
+		for (String name : childs) {
+			if (!name.endsWith(".yaml")) {
 				continue;
 			}
-			name=name.substring(0,name.lastIndexOf(".yaml"));
-			if(name.startsWith("v-")) {
-				name=name.substring("v-".length(),name.length());
+			name = name.substring(0, name.lastIndexOf(".yaml"));
+			if (name.startsWith("v-")) {
+				name = name.substring("v-".length(), name.length());
 			}
 			list.add(name);
 		}
