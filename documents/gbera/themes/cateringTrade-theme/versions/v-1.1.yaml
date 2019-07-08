@@ -1,4 +1,3 @@
-default-style: mystyle
 displays:
     display1:
        methods: 
@@ -26,6 +25,7 @@ displays:
              value-type: int
              usage: 好用
              
+default-style: mystyle             
 styles:
   mystyle:
    assets:
