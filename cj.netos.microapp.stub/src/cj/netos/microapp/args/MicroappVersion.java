@@ -1,6 +1,6 @@
 package cj.netos.microapp.args;
 
-public class MicroAppVersion {
+public class MicroappVersion {
 	String microappname;
 	String microappversion;
 	public String getMicroappname() {

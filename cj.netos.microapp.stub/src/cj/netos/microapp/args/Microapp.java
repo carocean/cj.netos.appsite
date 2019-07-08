@@ -2,7 +2,7 @@ package cj.netos.microapp.args;
 
 import java.util.Map;
 
-public class MicroApp {
+public class Microapp {
 	String from;
 	String theme;
 	String home;

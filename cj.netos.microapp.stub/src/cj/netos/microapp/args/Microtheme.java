@@ -1,6 +1,6 @@
 package cj.netos.microapp.args;
 
-public class MicroTheme {
+public class Microtheme {
 	String id;
 	String creator;
 	String name;

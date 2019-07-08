@@ -3,7 +3,7 @@ package cj.netos.microapp.args;
 public class UpdateCommand {
 	String microappname;
 	String microappversion;
-	String command;//D删除的版本；N新增的版本；微应用一旦发布不可修改，故而无修改命令
+	String command;//DA微应用不存在;D删除的版本；N新增的版本；微应用一旦发布不可修改，故而无修改命令
 	public String getMicroappname() {
 		return microappname;
 	}

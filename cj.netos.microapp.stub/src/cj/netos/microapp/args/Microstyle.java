@@ -1,6 +1,6 @@
 package cj.netos.microapp.args;
 
-public class MicroStyle {
+public class Microstyle {
 	String id;
 	String name;
 	String theme;
