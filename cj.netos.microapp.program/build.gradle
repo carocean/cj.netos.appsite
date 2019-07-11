@@ -26,7 +26,7 @@ dependencies {
 task releaseToHost(type: Copy) {
  dependsOn "build",":cj.netos.microapp.stub:release"
  from 'build/libs/'
-into '../cmdtools/gateway-2.2.3/assemblies/microapp'
+into '../cmdtools/gateway-2.2.4/assemblies/microapp'
  include '**/*.jar'
   exclude '**/*-javadoc.jar','**/*-sources.jar'
  }

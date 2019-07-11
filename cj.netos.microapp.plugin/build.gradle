@@ -51,7 +51,7 @@ task copyReferences(type: Copy) {
 task releaseToHost(type: Copy) {
  dependsOn 'copyReferences', 'copyRefembeds',"build"
  from 'build/libs/'
-into '../cmdtools/gateway-2.2.3/assemblies/microapp/plugins/MicroAppPlugin'
+into '../cmdtools/gateway-2.2.4/assemblies/microapp/plugins/MicroAppPlugin'
  include '**/*.jar'
   exclude '**/*-javadoc.jar','**/*-sources.jar'
  }
