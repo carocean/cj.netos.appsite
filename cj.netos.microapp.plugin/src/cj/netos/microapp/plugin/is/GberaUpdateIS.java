@@ -139,8 +139,7 @@ public class GberaUpdateIS implements IGberaUpdateIS {
 			app.setTitle(StringUtil.isEmpty(conf.get("title") + "") ? "" : conf.get("title") + "");
 			app.setDesc(StringUtil.isEmpty(conf.get("desc") + "") ? "" : conf.get("desc") + "");
 			app.setDeveloper(StringUtil.isEmpty(conf.get("developer") + "") ? "" : conf.get("developer") + "");
-			app.setApplyVersion(
-					StringUtil.isEmpty(conf.get("apply-version") + "") ? "" : conf.get("apply-version") + "");
+			app.setVersion(version.substring("v-".length(),version.length()));
 			return app;
 		} catch (FileNotFoundException e) {
 			throw new CircuitException("404", e);

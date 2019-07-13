@@ -7,7 +7,7 @@ public class Microapp {
 	String title;
 	String desc;
 	String developer;
-	String applyVersion;
+	String version;
 	String from;
 	String theme;
 	String home;
@@ -67,11 +67,11 @@ public class Microapp {
 	public void setDeveloper(String developer) {
 		this.developer = developer;
 	}
-	public String getApplyVersion() {
-		return applyVersion;
+	public String getVersion() {
+		return version;
 	}
-	public void setApplyVersion(String applyVersion) {
-		this.applyVersion = applyVersion;
+	public void setVersion(String version) {
+		this.version = version;
 	}
 	
 	
