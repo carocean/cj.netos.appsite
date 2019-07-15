@@ -10,6 +10,7 @@ public class Microapp {
 	String version;
 	String from;
 	String theme;
+	String style;
 	String home;
 	Microsite microsite;
 	Map<String,Micropage> pages;
@@ -24,6 +25,12 @@ public class Microapp {
 	}
 	public void setTheme(String theme) {
 		this.theme = theme;
+	}
+	public String getStyle() {
+		return style;
+	}
+	public void setStyle(String style) {
+		this.style = style;
 	}
 	public String getHome() {
 		return home;

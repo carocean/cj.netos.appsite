@@ -2,6 +2,7 @@
 #只所以不将配置拼成一个整体，是因为将来一个微应用会发布多个版本，不利于查询性能
 from: null
 theme: mytheme/1.2
+style: blue_style
 home: /dir1/dir2/page2.page
 #所有页共享的微站
 microsite:
@@ -9,7 +10,7 @@ microsite:
  token: xxxxx
 pages:
   /dir1/page1.page:
-     display: display1@style1 
+     display: display1 
   /dir1/dir2/page2.page:
     #使用了当前主题的默认style
      display: display2
@@ -18,5 +19,5 @@ pages:
        host: http://news.sina.com/tt/microapp1
        token: xxxxx
   /dir3/dir4/page5.page:
-     display: display1@style1 
+     display: display1 
   
