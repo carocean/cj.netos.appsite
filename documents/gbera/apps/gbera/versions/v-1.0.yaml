@@ -3,21 +3,14 @@
 from: null
 theme: gbera/1.0
 style: blue_style
-home: /dir1/dir2/page2.page
+home: /public/login.page
 #所有页共享的微站
 microsite:
  host: http://news.163.com/tt/microapp1
  token: xxxxx
 pages:
-  /dir1/page1.page:
-     display: display1 
-  /dir1/dir2/page2.page:
-    #使用了当前主题的默认style
-     display: display1
-    #该页私有微站
-     microsite:
-       host: http://news.sina.com/tt/microapp1
-       token: xxxxx
-  /dir3/dir4/page5.page:
-     display: display1 
+  /public/login.page:
+     display: login_display 
+  /home.page:
+     display: backdrop_display
   
