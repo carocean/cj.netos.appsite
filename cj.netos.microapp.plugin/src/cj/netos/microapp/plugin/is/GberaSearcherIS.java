@@ -207,7 +207,7 @@ public class GberaSearcherIS implements IGberaSearcherIS {
 			Yaml yaml = new Yaml();
 			MicroPortal portalInfo = yaml.loadAs(new String(b), MicroPortal.class);
 			portalInfo.setVersion(version);
-
+			portalInfo.setName(name);
 			if (StringUtil.isEmpty(selectStyle)) {
 				loadDefaultStyle(fs, portalPath, portalInfo);
 			} else {
