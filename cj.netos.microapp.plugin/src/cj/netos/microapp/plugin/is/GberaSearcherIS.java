@@ -14,18 +14,21 @@ import cj.lns.chip.sos.cube.framework.IReader;
 import cj.lns.chip.sos.cube.framework.OpenMode;
 import cj.lns.chip.sos.cube.framework.TooLongException;
 import cj.lns.chip.sos.cube.framework.lock.FileLockException;
+import cj.netos.microapp.args.MicroPortal;
 import cj.netos.microapp.args.Microapp;
 import cj.netos.microapp.args.MicroappVersion;
+import cj.netos.microapp.args.Microdisplay;
+import cj.netos.microapp.args.Microstyle;
 import cj.netos.microapp.args.UpdateCommand;
-import cj.netos.microapp.is.IGberaUpdateIS;
+import cj.netos.microapp.is.IGberaSearcherIS;
 import cj.netos.microapp.plugin.util.DBUtils;
 import cj.studio.ecm.annotation.CjService;
 import cj.studio.ecm.annotation.CjServiceRef;
 import cj.studio.ecm.net.CircuitException;
 import cj.ultimate.util.StringUtil;
 
-@CjService(name = "gberaUpdateIS")
-public class GberaUpdateIS implements IGberaUpdateIS {
+@CjService(name = "gberaSearcherIS")
+public class GberaSearcherIS implements IGberaSearcherIS {
 	@CjServiceRef
 	DBUtils dbutils;
 
@@ -139,7 +142,7 @@ public class GberaUpdateIS implements IGberaUpdateIS {
 			app.setTitle(StringUtil.isEmpty(conf.get("title") + "") ? "" : conf.get("title") + "");
 			app.setDesc(StringUtil.isEmpty(conf.get("desc") + "") ? "" : conf.get("desc") + "");
 			app.setDeveloper(StringUtil.isEmpty(conf.get("developer") + "") ? "" : conf.get("developer") + "");
-			app.setVersion(version.substring("v-".length(),version.length()));
+			app.setVersion(version.substring("v-".length(), version.length()));
 			return app;
 		} catch (FileNotFoundException e) {
 			throw new CircuitException("404", e);
@@ -169,5 +172,111 @@ public class GberaUpdateIS implements IGberaUpdateIS {
 			list.add(name);
 		}
 		return list;
+	}
+
+	@Override
+	public MicroPortal getMicroPortalInfo(String microportal) throws CircuitException {
+		int pos = microportal.lastIndexOf("/");
+		if (pos < 0) {
+			throw new CircuitException("404", "缺少版本，格式：myportal/1.x");
+		}
+		String name = microportal.substring(0, pos);
+		String remaining = microportal.substring(pos + 1, microportal.length());
+
+		String selectStyle = "";
+		String version = microportal.substring(pos + 1, microportal.length());
+		pos = remaining.lastIndexOf("@");
+		if (pos < 0) {
+			version = remaining;
+		} else {
+			version = remaining.substring(0, pos);
+			selectStyle = remaining.substring(pos + 1, remaining.length());
+		}
+		String portalPath = String.format("/portals/%s/", name);
+		FileSystem fs = dbutils.fs();
+		DirectoryInfo dir = fs.dir(portalPath);
+		if (!dir.exists()) {
+			throw new CircuitException("404", "portal不存在:" + microportal);
+		}
+		String fn = String.format("%smicroportal.yaml", portalPath);
+		try {
+			FileInfo fi = fs.openFile(fn, OpenMode.onlyOpen);
+			IReader reader = fi.reader(0);
+			byte[] b = reader.readFully();
+			reader.close();
+			Yaml yaml = new Yaml();
+			MicroPortal portalInfo = yaml.loadAs(new String(b), MicroPortal.class);
+			portalInfo.setVersion(version);
+
+			if (StringUtil.isEmpty(selectStyle)) {
+				loadDefaultStyle(fs, portalPath, portalInfo);
+			} else {
+				portalInfo.setUseStyle(selectStyle);
+			}
+			loadStyles(fs, portalPath, portalInfo);
+			loadDisplays(fs, portalPath, portalInfo);
+			return portalInfo;
+		} catch (FileNotFoundException e) {
+			throw new CircuitException("404", e);
+		} catch (FileLockException | TooLongException e) {
+			throw new CircuitException("500", e);
+		}
+	}
+
+	private void loadDisplays(FileSystem fs, String portalPath, MicroPortal portalInfo)
+			throws FileLockException, TooLongException {
+		String stylesHome = String.format("%sversions/v-%s/displays/", portalPath, portalInfo.getVersion());
+		DirectoryInfo dir = fs.dir(stylesHome);
+		List<FileInfo> files = dir.listFiles();
+		for (FileInfo f : files) {
+			if (!f.name().endsWith(".yaml")) {
+				continue;
+			}
+			IReader reader = f.reader(0);
+			byte[] b = reader.readFully();
+			reader.close();
+			Yaml yaml = new Yaml();
+			Microdisplay display = yaml.loadAs(new String(b), Microdisplay.class);
+			String key = f.name();
+			int pos = key.lastIndexOf(".yaml");
+			key = key.substring(0, pos);
+			portalInfo.getDisplays().put(key, display);
+			reader.close();
+		}
+	}
+
+	private void loadStyles(FileSystem fs, String portalPath, MicroPortal portalInfo)
+			throws FileNotFoundException, FileLockException, TooLongException {
+		String stylesHome = String.format("%sversions/v-%s/styles/", portalPath, portalInfo.getVersion());
+		DirectoryInfo dir = fs.dir(stylesHome);
+		List<FileInfo> files = dir.listFiles();
+		for (FileInfo f : files) {
+			if (!f.name().endsWith(".yaml")) {
+				continue;
+			}
+			IReader reader = f.reader(0);
+			byte[] b = reader.readFully();
+			reader.close();
+			Yaml yaml = new Yaml();
+			Microstyle style = yaml.loadAs(new String(b), Microstyle.class);
+			String key = f.name();
+			int pos = key.lastIndexOf(".yaml");
+			key = key.substring(0, pos);
+			portalInfo.getStyles().put(key, style);
+			reader.close();
+		}
+	}
+
+	private void loadDefaultStyle(FileSystem fs, String portalPath, MicroPortal portalInfo)
+			throws FileNotFoundException, FileLockException, TooLongException {
+		String fn = String.format("%sversions/v-%s/default_style.yaml", portalPath, portalInfo.getVersion());
+		FileInfo fi = fs.openFile(fn, OpenMode.onlyOpen);
+		IReader reader = fi.reader(0);
+		byte[] b = reader.readFully();
+		reader.close();
+		Yaml yaml = new Yaml();
+		Map<String, String> map = yaml.load(new String(b));
+		portalInfo.setUseStyle(map.get("default"));
+		reader.close();
 	}
 }

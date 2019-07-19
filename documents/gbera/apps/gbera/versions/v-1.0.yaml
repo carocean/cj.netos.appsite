@@ -1,7 +1,7 @@
 #从哪个版本派生，如果是第一个则为null
 #只所以不将配置拼成一个整体，是因为将来一个微应用会发布多个版本，不利于查询性能
 from: null
-theme: gbera/1.0
+portal: gbera/1.0
 style: blue_style
 home: /public/login.page
 #所有页共享的微站

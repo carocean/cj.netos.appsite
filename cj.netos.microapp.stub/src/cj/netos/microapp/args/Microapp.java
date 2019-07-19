@@ -9,7 +9,7 @@ public class Microapp {
 	String developer;
 	String version;
 	String from;
-	String theme;
+	String portal;
 	String style;
 	String home;
 	Microsite microsite;
@@ -20,11 +20,11 @@ public class Microapp {
 	public void setFrom(String from) {
 		this.from = from;
 	}
-	public String getTheme() {
-		return theme;
+	public String getPortal() {
+		return portal;
 	}
-	public void setTheme(String theme) {
-		this.theme = theme;
+	public void setPortal(String portal) {
+		this.portal = portal;
 	}
 	public String getStyle() {
 		return style;
