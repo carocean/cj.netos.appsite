@@ -2,15 +2,20 @@
 #只所以不将配置拼成一个整体，是因为将来一个微应用会发布多个版本，不利于查询性能
 from: null
 portal: gbera/1.0
-style: blue_style
+style: green_style
 home: /public/login.page
+error: /public/error.page
 #所有页共享的微站
 microsite:
  host: http://news.163.com/tt/microapp1
  token: xxxxx
 pages:
   /public/login.page:
-     display: login_display 
+     display: login_display
+     microsite:
+       host: http://localhost:9090/uc/authentication.service
+       token: xxxxx
   /home.page:
      display: backdrop_display
-  
+  /public/error.page:
+     display: error_display

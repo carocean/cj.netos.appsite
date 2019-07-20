@@ -12,6 +12,7 @@ public class Microapp {
 	String portal;
 	String style;
 	String home;
+	String error;
 	Microsite microsite;
 	Map<String,Micropage> pages;
 	public String getFrom() {
@@ -19,6 +20,12 @@ public class Microapp {
 	}
 	public void setFrom(String from) {
 		this.from = from;
+	}
+	public String getError() {
+		return error;
+	}
+	public void setError(String error) {
+		this.error = error;
 	}
 	public String getPortal() {
 		return portal;
