@@ -18,6 +18,10 @@
           "protocol":"http/1.1",
           "usage":"认证指定主体的身份",
           "return-type":"java.lang.String",
+          "token":{
+            "in-request":"header",
+            "value":"xxkdkeidkkdkd"
+          },
           "parameters":{
             "authName":{
               "type":"java.lang.String",
@@ -65,6 +69,10 @@
           "protocol":"http/1.1",
           "usage":"提现单总数",
           "return-type":"double",
+          "token":{
+            "in-request":"header",
+            "value":"xxkdkeidkkdkd"
+          },
           "parameters":{
             "bank":{
               "type":"string",
