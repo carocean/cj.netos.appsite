@@ -19,8 +19,8 @@
           "usage":"认证指定主体的身份",
           "return-type":"java.lang.String",
           "token":{
-            "in-request":"header",
-            "value":"xxkdkeidkkdkd"
+            "name":"cjtoken",
+            "in-request":"header"
           },
           "parameters":{
             "authName":{
@@ -70,8 +70,8 @@
           "usage":"提现单总数",
           "return-type":"double",
           "token":{
-            "in-request":"header",
-            "value":"xxkdkeidkkdkd"
+            "name":"cjtoken",
+            "in-request":"header"
           },
           "parameters":{
             "bank":{
