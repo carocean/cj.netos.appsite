@@ -4,9 +4,9 @@ methods:
     protocol: http/1.1
     usage: 提现单总数
     return-type: double
-    rest-header:
-      Rest-StubFace: cj.netos.fsbank.stub.IBankAssetStub
-      Rest-Command: cashBillCount
+    token:
+      in-request: header
+      value: xxkdkeidkkdkd
     parameters:
       bank:
         type: string

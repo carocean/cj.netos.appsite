@@ -4,9 +4,9 @@ methods:
     protocol: http/1.1
     usage: 认证指定主体的身份
     return-type: java.lang.String
-    rest-header:
-      Rest-StubFace: cj.studio.backend.uc.stub.IAuthenticationStub
-      Rest-Command: authenticate
+    token:
+      in-request: header
+      value: xxkdkeidkkdkd
     parameters:
       authName:
         type: java.lang.String

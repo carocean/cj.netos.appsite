@@ -10,7 +10,7 @@ public class AppSiteProgram extends GatewayAppSiteProgram{
 
 	@Override
 	protected void onstart(Destination arg0, String arg1, ProgramAdapterType arg2) throws CircuitException {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method ports
 		
 	}
 	
