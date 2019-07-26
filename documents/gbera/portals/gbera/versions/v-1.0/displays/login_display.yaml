@@ -5,8 +5,8 @@ methods:
     usage: 认证指定主体的身份
     return-type: java.lang.String
     token:
+      name: cjtoken
       in-request: header
-      value: xxkdkeidkkdkd
     parameters:
       authName:
         type: java.lang.String

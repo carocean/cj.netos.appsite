@@ -5,8 +5,8 @@ methods:
     usage: 提现单总数
     return-type: double
     token:
+      name: cjtoken
       in-request: header
-      value: xxkdkeidkkdkd
     parameters:
       bank:
         type: string
