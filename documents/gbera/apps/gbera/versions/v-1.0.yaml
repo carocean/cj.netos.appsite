@@ -13,7 +13,7 @@ pages:
   /public/login.page:
      display: login_display
      microsite:
-       host: http://localhost:9090/uc/authentication.surface
+       host: http://localhost:6700/openport/uc.ports
        token: xxxxx
   /home.page:
      display: backdrop_display
