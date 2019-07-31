@@ -1,6 +1,6 @@
 methods:
   authenticate:
-    command: get
+    command: post
     protocol: http/1.1
     usage: 认证指定主体的身份
     return-type: java.lang.String
@@ -22,12 +22,12 @@ methods:
         type: java.lang.String
         usage: 要认证的主体，可以是用户名，也可是令牌(如果是令牌：结合password以认证令牌是密码持有者的）
         #请求该方法要放到http请求头的哪里？header?parameter?content?
-        in-request: parameter     
+        in-request: header
       password:
         type: java.lang.String
         usage: 密码
         #请求该方法要放到http请求头的哪里？header?parameter?content?
-        in-request: parameter  
+        in-request: content
       ttlMillis:
         type: long
         usage: 令牌过期时间
