@@ -1,0 +1,30 @@
+{
+  "name":"gbera",
+  "title":"金证时代微应用",
+  "desc":"这样用吧",
+  "developer":"cj",
+  "version":"1.0",
+  "portal":"gbera/1.0",
+  "style":"green_style",
+  "home":"/public/login.page",
+  "error":"/public/error.page",
+  "microsite":{
+    "host":"http://news.163.com/tt/microapp1",
+    "token":"xxxxx"
+  },
+  "pages":{
+    "/public/login.page":{
+      "display":"login_display",
+      "microsite":{
+        "host":"http://localhost:9090/uc/authentication.service",
+        "token":"xxxxx"
+      }
+    },
+    "/home.page":{
+      "display":"backdrop_display"
+    },
+    "/public/error.page":{
+      "display":"error_display"
+    }
+  }
+}
