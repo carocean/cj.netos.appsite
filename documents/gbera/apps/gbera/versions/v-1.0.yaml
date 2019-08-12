@@ -16,6 +16,6 @@ pages:
        host: http://localhost:6700/openport/uc.ports
        token: xxxxx
   /home.page:
-     display: backdrop_display
+     display: desktop_display
   /public/error.page:
      display: error_display
