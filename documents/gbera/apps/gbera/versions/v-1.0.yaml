@@ -2,7 +2,7 @@
 #只所以不将配置拼成一个整体，是因为将来一个微应用会发布多个版本，不利于查询性能
 from: null
 portal: gbera/1.0
-style: green_style
+style: gray_style
 home: /public/login.page
 error: /public/error.page
 #所有页共享的微站
@@ -13,9 +13,13 @@ pages:
   /public/login.page:
      display: login_display
      microsite:
-       host: http://localhost:6700/openport/uc.ports
+       host: http://192.168.1.181:6700/openport/uc.ports
        token: xxxxx
-  /home.page:
+  /portal.page:
+     display: portal_display
+  /desktop.page:
      display: desktop_display
+  /netflow.page:
+    display: netflow_display
   /public/error.page:
      display: error_display
