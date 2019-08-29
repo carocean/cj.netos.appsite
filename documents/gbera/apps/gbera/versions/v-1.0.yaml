@@ -10,10 +10,12 @@ microsite:
  host: http://news.163.com/tt/microapp1
  token: xxxxx
 pages:
+  /public/error.page:
+    display: error_display
   /public/login.page:
      display: login_display
      microsite:
-       host: http://192.168.1.181:6700/openport/uc.ports
+       host: http://192.168.1.182:6700/openport/uc.ports
        token: xxxxx
   /portal.page:
      display: portal_display
@@ -21,5 +23,7 @@ pages:
      display: desktop_display
   /netflow.page:
     display: netflow_display
-  /public/error.page:
-     display: error_display
+  /market.page:
+    display: market_display
+  /geoshpere.page:
+    display: geoshphere_display
