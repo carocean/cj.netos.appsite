@@ -25,5 +25,5 @@ pages:
     display: netflow_display
   /market.page:
     display: market_display
-  /geoshpere.page:
-    display: geoshphere_display
+  /geosphere.page:
+    display: geosphere_display
