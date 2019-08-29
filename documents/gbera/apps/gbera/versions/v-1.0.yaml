@@ -15,7 +15,7 @@ pages:
   /public/login.page:
      display: login_display
      microsite:
-       host: http://192.168.1.182:6700/openport/uc.ports
+       host: http://localhost:6700/openport/uc.ports
        token: xxxxx
   /portal.page:
      display: portal_display
