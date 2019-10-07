@@ -17,12 +17,8 @@ sourceSets {
     } 
  repositories { 
  	mavenCentral();
-	 flatDir(dirs: "$projectDir/global/lib") 
- } 
+ }
 
 dependencies {
-	compile(
-            'commons-cli:commons-cli:1.2'
-    )
-	compile fileTree('../global/runtime')
+	compile group: 'log4j', name: 'log4j', version: '1.2.17'
 }

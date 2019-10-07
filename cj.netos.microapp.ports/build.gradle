@@ -18,10 +18,7 @@ repositories {
 }
 
 dependencies {
-    compile fileTree('../global/runtime')
     compile group: 'cj.netos.openport', name: 'cj.studio.openport', version: ref_cj_studio_openport_version
-    compile fileTree('src/cj/refembeds')
-    compile fileTree('src/cj/references')
 }
 
 task releaseToProgram(type: Copy) {

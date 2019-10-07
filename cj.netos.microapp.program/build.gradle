@@ -20,9 +20,7 @@ repositories {
 dependencies {
     compile group: 'cj.netos.openport', name: 'cj.studio.openport', version: ref_cj_studio_openport_version
     compile project(':cj.netos.microapp.ports');
-    compile fileTree('../global/runtime')
     //compile fileTree('src/cj/references')
-
 }
 
 task copyReferences(type: Copy) {
@@ -38,7 +36,7 @@ build.dependsOn(":cj.netos.microapp.ports:release")
 task releaseToHost(type: Copy) {
     dependsOn "build"
     from 'build/libs/'
-    into '../cmdtools/gateway-2.3.6/assemblies/microapp'
+    into '../cmdtools/gateway/assemblies/microapp'
     include '**/*.jar'
     exclude '**/*-javadoc.jar', '**/*-sources.jar'
 }

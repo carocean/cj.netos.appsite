@@ -283,3 +283,201 @@
 2019年08月14日 03:34:44  错误: cj.studio.gateway.server.handler.HttpChannelHandler - 404 簇中缺少目标:openport
 2019年08月14日 03:34:50  错误: cj.studio.gateway.server.handler.HttpChannelHandler - 404 簇中缺少目标:openport
 2019年08月14日 03:34:53  错误: cj.studio.gateway.server.handler.HttpChannelHandler - 404 簇中缺少目标:openport
+2019年10月07日 18:22:39  信息 : -------------网关启动完毕-------------------
+2019年10月07日 18:22:39  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月07日 18:22:48  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月07日 18:22:49  信息 : openports插件发现配置：
+2019年10月07日 18:22:49  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月07日 18:22:49  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月07日 18:22:49  信息 : 系统开放api地址是：/portsapi
+2019年10月07日 18:22:49  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月07日 18:22:49  信息 : 		服务命令：checkMicroAppVersions
+2019年10月07日 18:22:49  信息 : 				参数：versions java.util.List content
+2019年10月07日 18:22:49  信息 : 		服务命令：listMicroAppVersion
+2019年10月07日 18:22:49  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月07日 18:22:49  信息 : 		服务命令：getMicroPortalInfo
+2019年10月07日 18:22:49  信息 : 				参数：microportal java.lang.String parameter
+2019年10月07日 18:22:49  信息 : 		服务命令：getMicroAppInfo
+2019年10月07日 18:22:49  信息 : 				参数：microapp java.lang.String parameter
+2019年10月07日 23:29:14  信息 : -------------网关启动完毕-------------------
+2019年10月07日 23:29:14  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月07日 23:29:36  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月07日 23:29:37  信息 : openports插件发现配置：
+2019年10月07日 23:29:37  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月07日 23:29:37  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月07日 23:29:37  信息 : 系统开放api地址是：/portsapi
+2019年10月07日 23:29:37  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月07日 23:29:37  信息 : 		服务命令：checkMicroAppVersions
+2019年10月07日 23:29:37  信息 : 				参数：versions java.util.List content
+2019年10月07日 23:29:37  信息 : 		服务命令：listMicroAppVersion
+2019年10月07日 23:29:37  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月07日 23:29:37  信息 : 		服务命令：getMicroPortalInfo
+2019年10月07日 23:29:37  信息 : 				参数：microportal java.lang.String parameter
+2019年10月07日 23:29:37  信息 : 		服务命令：getMicroAppInfo
+2019年10月07日 23:29:37  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 00:06:07  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:06:07  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:06:16  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 00:06:16  信息 : openports插件发现配置：
+2019年10月08日 00:06:16  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 00:06:16  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 00:06:16  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 00:06:17  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:06:17  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 00:06:17  信息 : 				参数：versions java.util.List content
+2019年10月08日 00:06:17  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 00:06:17  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 00:06:17  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 00:06:17  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 00:06:17  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 00:06:17  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 00:17:07  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:17:07  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:17:17  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 00:17:18  信息 : openports插件发现配置：
+2019年10月08日 00:17:18  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 00:17:18  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 00:17:18  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 00:17:18  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:17:18  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 00:17:18  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 00:17:18  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 00:17:18  信息 : 				参数：versions java.util.List content
+2019年10月08日 00:17:18  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 00:17:18  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 00:17:18  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 00:17:18  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 00:17:39  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:17:39  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:18:01  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:18:01  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:18:09  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 00:18:09  信息 : openports插件发现配置：
+2019年10月08日 00:18:09  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 00:18:09  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 00:18:09  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 00:18:09  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:18:09  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 00:18:09  信息 : 				参数：versions java.util.List content
+2019年10月08日 00:18:09  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 00:18:09  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 00:18:09  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 00:18:09  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 00:18:09  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 00:18:09  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 00:23:37  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:23:37  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:24:08  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 00:24:08  信息 : openports插件发现配置：
+2019年10月08日 00:24:08  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 00:24:08  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 00:24:08  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 00:24:08  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:24:08  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 00:24:08  信息 : 				参数：versions java.util.List content
+2019年10月08日 00:24:08  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 00:24:08  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 00:24:08  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 00:24:08  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 00:24:08  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 00:24:08  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 00:26:04  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:26:04  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:26:11  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 00:26:11  信息 : openports插件发现配置：
+2019年10月08日 00:26:11  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 00:26:11  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 00:26:11  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 00:26:12  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:26:12  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 00:26:12  信息 : 				参数：versions java.util.List content
+2019年10月08日 00:26:12  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 00:26:12  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 00:26:12  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 00:26:12  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 00:26:12  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 00:26:12  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 00:27:31  信息 : 网关监视失败。原因：Bad file descriptor
+2019年10月08日 00:28:20  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:28:20  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:28:25  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 00:28:25  信息 : openports插件发现配置：
+2019年10月08日 00:28:25  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 00:28:25  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 00:28:25  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 00:28:25  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:28:25  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 00:28:25  信息 : 				参数：versions java.util.List content
+2019年10月08日 00:28:25  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 00:28:25  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 00:28:25  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 00:28:25  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 00:28:25  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 00:28:25  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 00:31:56  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:31:56  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:32:01  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 00:32:02  信息 : openports插件发现配置：
+2019年10月08日 00:32:02  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 00:32:02  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 00:32:02  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 00:32:02  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:32:02  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 00:32:02  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 00:32:02  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 00:32:02  信息 : 				参数：versions java.util.List content
+2019年10月08日 00:32:02  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 00:32:02  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 00:32:02  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 00:32:02  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 00:32:56  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:32:56  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:33:00  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 00:33:01  信息 : openports插件发现配置：
+2019年10月08日 00:33:01  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 00:33:01  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 00:33:01  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 00:33:01  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:33:01  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 00:33:01  信息 : 				参数：versions java.util.List content
+2019年10月08日 00:33:01  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 00:33:01  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 00:33:01  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 00:33:01  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 00:33:01  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 00:33:01  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 00:55:30  信息 : -------------网关启动完毕-------------------
+2019年10月08日 00:55:30  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 00:55:36  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 00:55:36  信息 : openports插件发现配置：
+2019年10月08日 00:55:36  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 00:55:36  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 00:55:36  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 00:55:36  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:55:36  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 00:55:36  信息 : 				参数：versions java.util.List content
+2019年10月08日 00:55:36  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 00:55:36  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 00:55:36  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 00:55:36  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 00:55:36  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 00:55:36  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 01:17:34  信息 : -------------网关启动完毕-------------------
+2019年10月08日 01:17:34  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 01:17:43  信息 : -------------网关启动完毕-------------------
+2019年10月08日 01:17:43  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月08日 01:17:50  信息 : 已装载共享库/Users/caroceanjofers/studio/github/cj.netos.gbera/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月08日 01:17:50  信息 : openports插件发现配置：
+2019年10月08日 01:17:50  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月08日 01:17:50  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月08日 01:17:50  信息 : 系统开放api地址是：/portsapi
+2019年10月08日 01:17:50  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 01:17:50  信息 : 		服务命令：checkMicroAppVersions
+2019年10月08日 01:17:50  信息 : 				参数：versions java.util.List content
+2019年10月08日 01:17:50  信息 : 		服务命令：listMicroAppVersion
+2019年10月08日 01:17:50  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月08日 01:17:50  信息 : 		服务命令：getMicroPortalInfo
+2019年10月08日 01:17:50  信息 : 				参数：microportal java.lang.String parameter
+2019年10月08日 01:17:50  信息 : 		服务命令：getMicroAppInfo
+2019年10月08日 01:17:50  信息 : 				参数：microapp java.lang.String parameter
+2019年10月08日 01:18:01  信息 : 网关监视失败。原因：Bad file descriptor
