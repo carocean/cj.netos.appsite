@@ -1,4 +1,3 @@
 include "cj.netos.microapp.program"
-include "cj.netos.microapp.main"
 include "cj.netos.microapp.plugin"
 include "cj.netos.microapp.ports"
