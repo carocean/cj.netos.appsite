@@ -235,3 +235,37 @@
 2019年10月09日 01:54:52  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
 2019年10月09日 01:54:52  信息 : 		服务命令：getMicroPortalInfo
 2019年10月09日 01:54:52  信息 : 				参数：microportal java.lang.String parameter
+2019年10月09日 14:44:08  信息 : -------------网关启动完毕-------------------
+2019年10月09日 14:44:08  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月09日 14:44:15  信息 : 已装载共享库/Users/cj/studio/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月09日 14:44:16  信息 : openports插件发现配置：
+2019年10月09日 14:44:16  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月09日 14:44:16  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月09日 14:44:16  信息 : 系统开放api地址是：/portsapi
+2019年10月09日 14:44:16  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月09日 14:44:16  信息 : 		服务命令：checkMicroAppVersions
+2019年10月09日 14:44:16  信息 : 				参数：versions java.util.List content
+2019年10月09日 14:44:16  信息 : 		服务命令：listMicroAppVersion
+2019年10月09日 14:44:16  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月09日 14:44:16  信息 : 		服务命令：getMicroPortalInfo
+2019年10月09日 14:44:16  信息 : 				参数：microportal java.lang.String parameter
+2019年10月09日 14:44:16  信息 : 		服务命令：getMicroAppInfo
+2019年10月09日 14:44:16  信息 : 				参数：microapp java.lang.String parameter
+2019年10月09日 14:44:30  信息 : 网关监视失败。原因：Bad file descriptor
+2019年10月09日 14:44:33  信息 : -------------网关启动完毕-------------------
+2019年10月09日 14:44:33  信息: cj.studio.gateway.tools.GatewayEntrypoint - 网关成功启动
+2019年10月09日 14:44:37  信息 : 已装载共享库/Users/cj/studio/cj.netos.gbera/cmdtools/gateway/lib/share
+2019年10月09日 14:44:38  信息 : openports插件发现配置：
+2019年10月09日 14:44:38  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
+2019年10月09日 14:44:38  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
+2019年10月09日 14:44:38  信息 : 系统开放api地址是：/portsapi
+2019年10月09日 14:44:38  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月09日 14:44:38  信息 : 		服务命令：checkMicroAppVersions
+2019年10月09日 14:44:38  信息 : 				参数：versions java.util.List content
+2019年10月09日 14:44:38  信息 : 		服务命令：listMicroAppVersion
+2019年10月09日 14:44:38  信息 : 				参数：appnameWithoutVersion java.lang.String parameter
+2019年10月09日 14:44:38  信息 : 		服务命令：getMicroPortalInfo
+2019年10月09日 14:44:38  信息 : 				参数：microportal java.lang.String parameter
+2019年10月09日 14:44:38  信息 : 		服务命令：getMicroAppInfo
+2019年10月09日 14:44:38  信息 : 				参数：microapp java.lang.String parameter
+2019年10月09日 15:02:50  信息 : 网关监视失败。原因：Bad file descriptor
