@@ -5,7 +5,7 @@
 				name:"$openports",
 				class:"cj.studio.openport.client.OpenportChipPlugin",
 				parameters:{
-					ports:"[{'openportInterface':'cj.studio.openport.client.IRequestAdapter','remoteOpenportsUrl':'ports://usercenter.com/uc/authentication.service','token':''}]"
+					ports:"[{'openportInterface':'cj.netos.uc.port.IAuthPort','remoteOpenportsUrl':'ports://47.105.165.186/uc/auth','token':'eyJhbGciOiJIUzI1NiJ9.eyJhcHAtcm9sZXMiOltdLCJhY2NvdW50aWQiOiIwMDE5MTAwODE3NTAwNzYzIiwic3ViIjoiMDAxOTA5MjcxNTE3NDI2MCIsInRlbmFudC1yb2xlcyI6W10sImFjY291bnROYW1lIjoic3VwZXJhZG1pbiIsImFwcGlkIjoiMDAxOTA5MjcxNDM4MzMwOSIsImlzcyI6Im5ldG9zIiwidWMtcm9sZXMiOlt7InJvbGVJZCI6ImFkbWluaXN0cmF0b3JzIiwicm9sZU5hbWUiOiLotoXnuqfnrqHnkIblkZgiLCJpc0luaGVyaXRhYmxlIjp0cnVlfSx7InJvbGVJZCI6InRlbmFudEFkbWluaXN0cmF0b3JzIiwicm9sZU5hbWUiOiLnp5_miLfnrqHnkIblkZgiLCJpc0luaGVyaXRhYmxlIjp0cnVlfV0sImV4cCI6MTU3MDcxNTUwNywiaWF0IjoxNTcwNjI5MTA3LCJqdGkiOiI3ZjRhOGFkYi0yZjRlLTQwMDYtOGY4OC05MTc1ZmE4Y2Y5MDAifQ.9x593qR9UiQUrMed0at4QfLDVJTY-WWZS9dQsHRmAGg'}]"
 				}
 			}
 		],
@@ -16,7 +16,7 @@
 				parameters: {
 					"publicAPIPath": '/portsapi',
 					accessControlStrategy: '',
-					checkTokenStrategy: ''
+					checkTokenStrategy: 'cj.netos.microapp.program.CheckTokenStrategy'
 				}
 			}
 		]

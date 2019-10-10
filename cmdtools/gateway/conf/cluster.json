@@ -1,1 +1,19 @@
-{"valids":[{"name":"microapp","uris":["app://microapp:way"],"props":{}}],"invalids":[]}
+{
+  "valids": [
+    {
+      "name": "microapp",
+      "uris": [
+        "app://microapp:way"
+      ],
+      "props": {}
+    },
+    {
+      "name": "ports://47.105.165.186",
+      "uris": [
+        "http://47.105.165.186"
+      ],
+      "props": {}
+    }
+  ],
+  "invalids": []
+}
