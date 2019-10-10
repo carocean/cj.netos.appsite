@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class CheckTokenStrategy implements ICheckTokenStrategy {
     IAuthPort port;
-    String appid;
+    String appid;//这是uc分发的应用id，与微应用是两个概含，微应用是gbera应用中抽象的逻辑应用概念，并且将名为gbera的微应用视作官方微应用
 
     @Override
     public void init(IServiceSite site) {
