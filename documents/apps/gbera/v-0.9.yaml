@@ -1,0 +1,19 @@
+portal: modern
+style: gray_style
+home: /public/login.page
+error: /public/error.page
+pages:
+  /public/error.page:
+    display: error_display
+  /public/login.page:
+     display: login_display
+  /portal.page:
+     display: portal_display
+  /desktop.page:
+     display: desktop_display
+  /netflow.page:
+    display: netflow_display
+  /market.page:
+    display: market_display
+  /geosphere.page:
+    display: geosphere_display

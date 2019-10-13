@@ -1,0 +1,55 @@
+sourceSets {
+    main {
+        java {
+            srcDir "$projectDir/src"
+        }
+        resources {
+            srcDir "$projectDir/site-src"
+        }
+    }
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+repositories {
+}
+
+dependencies {
+    compile group: 'org.yaml', name: 'snakeyaml', version: '1.24'
+    compile group: 'cj.studio.gateway2', name: 'cj.studio.orm.mongodb', version: ref_cj_studio_orm_mongodb_version
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+    compile project(':cj.netos.appsite.ports');
+    compile fileTree('src/cj/refembeds')
+    compile fileTree('src/cj/references')
+}
+
+task copyRefembeds(type: Copy) {
+    from configurations.compileClasspath.files {
+        include 'cj.studio.orm.mongodb-*.jar'
+    }
+    into 'src/cj/refembeds'
+}
+
+task copyReferences(type: Copy) {
+    from configurations.compileClasspath.files {
+        include 'snakeyaml-*.jar','mongodb-driver-*.jar','cj.lns.chip.sos.cube-*.jar','bson-*.jar'
+    }
+    into 'src/cj/references'
+}
+
+build.dependsOn(copyReferences)
+build.dependsOn(copyRefembeds)
+
+task releaseToHost(type: Copy) {
+    dependsOn "build"
+    from 'build/libs/'
+    into '../cmdtools/gateway/assemblies/appsite/plugins/MicroAppPlugin'
+    include '**/*.jar'
+    exclude '**/*-javadoc.jar', '**/*-sources.jar'
+}
+
+task release(type: Copy) {
+    dependsOn "releaseToHost"
+}

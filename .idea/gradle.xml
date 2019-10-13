@@ -12,9 +12,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/cj.netos.microapp.plugin" />
-            <option value="$PROJECT_DIR$/cj.netos.microapp.ports" />
-            <option value="$PROJECT_DIR$/cj.netos.microapp.program" />
+            <option value="$PROJECT_DIR$/cj.netos.appsite.plugin" />
+            <option value="$PROJECT_DIR$/cj.netos.appsite.ports" />
+            <option value="$PROJECT_DIR$/cj.netos.appsite.program" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

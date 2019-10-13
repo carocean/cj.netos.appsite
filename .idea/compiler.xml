@@ -4,6 +4,12 @@
     <bytecodeTargetLevel>
       <module name="cj.netos.gbera.cj.netos.microapp.main.main" target="1.8" />
       <module name="cj.netos.gbera.cj.netos.microapp.main.test" target="1.8" />
+      <module name="cj.netos.gbera.cj.netos.microapp.plugin.main" target="1.8" />
+      <module name="cj.netos.gbera.cj.netos.microapp.plugin.test" target="1.8" />
+      <module name="cj.netos.gbera.cj.netos.microapp.ports.main" target="1.8" />
+      <module name="cj.netos.gbera.cj.netos.microapp.ports.test" target="1.8" />
+      <module name="cj.netos.gbera.cj.netos.microapp.program.main" target="1.8" />
+      <module name="cj.netos.gbera.cj.netos.microapp.program.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

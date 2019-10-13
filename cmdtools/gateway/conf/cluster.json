@@ -1,9 +1,9 @@
 {
   "valids": [
     {
-      "name": "microapp",
+      "name": "appsite",
       "uris": [
-        "app://microapp:way"
+        "app://appsite:way"
       ],
       "props": {}
     },

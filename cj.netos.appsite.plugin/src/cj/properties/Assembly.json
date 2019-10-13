@@ -1,0 +1,62 @@
+//172.31.210.92,47.104.128.137
+{
+	entryPoint : {
+		plugins:[
+			{
+				name:"mongodb",
+				class:"cj.studio.orm.mongodb.MongoDBPlugin",
+				parameters:{
+					remotes:"[
+					   '172.31.210.92:27017'
+					]"
+				}
+			}
+		],		
+		activators : [
+			
+		]
+	},
+	assemblyInfo : {
+		assemblyTitle : "AppsitePlugin",
+		assemblyResource:"site=/site;http.root=$(site)/web;http.jss=$(site)/jss/http;ws.jss=$(site)/jss/ws",
+		assemblyDescription : "微应用插件",
+		assemblyConfiguration : "",
+		assemblyCompany : "netos",
+		assemblyProduct : "cj.netos.appsite.plugin",
+		assemblyCopyright : "Copyright   2011",
+		assemblyTrademark : "",
+		assemblyCulture : "",
+		guid : "EC878F6D-157C-4209-9F58-FEA262840928",
+		assemblyVersion : "1.0.0.0",
+		assemblyFileVersion : "1.0.0.0"
+	},
+	global:{
+		default:"zh_CN",
+		desc:"如果系统环境要求各芯片采用的语言本芯片没有，则芯片可采用默认语言"
+		},
+	serviceContainer : {
+		name : "netContainer",
+		switchFilter:"off",
+		jss:[{
+			module:"services1",
+			package:"cj.netos.appsite.plugin.jss",
+			unzip:"true",
+			searchMode:"link",
+			extName:".jss.js"
+		}],
+		scans : [{
+					package : "cj.studio.gateway.stub",
+					extName : ".class|.json|.xml",
+					exoterical:"true"
+				},{
+					package : "cj.studio.orm.mongodb",
+					extName : ".class|.json|.xml",
+					exoterical:"true"
+				},{
+					package : "cj.netos.appsite.plugin",
+					extName : ".class|.json|.xml",
+					exoterical:"true"
+				}]
+
+	}
+}

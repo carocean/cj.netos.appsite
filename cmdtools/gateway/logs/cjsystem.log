@@ -5,7 +5,7 @@
 2019年10月07日 18:09:38  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
 2019年10月07日 18:09:38  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
 2019年10月07日 18:09:38  信息 : 系统开放api地址是：/portsapi
-2019年10月07日 18:09:38  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月07日 18:09:38  信息 : 发现安全服务：/searcher.ports，类型：GberaSearcherPorts
 2019年10月07日 18:09:38  信息 : 		服务命令：checkMicroAppVersions
 2019年10月07日 18:09:38  信息 : 				参数：versions java.util.List content
 2019年10月07日 18:09:38  信息 : 		服务命令：listMicroAppVersion
@@ -21,7 +21,7 @@
 2019年10月08日 00:07:03  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
 2019年10月08日 00:07:03  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
 2019年10月08日 00:07:03  信息 : 系统开放api地址是：/portsapi
-2019年10月08日 00:07:03  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:07:03  信息 : 发现安全服务：/searcher.ports，类型：GberaSearcherPorts
 2019年10月08日 00:07:03  信息 : 		服务命令：getMicroAppInfo
 2019年10月08日 00:07:03  信息 : 				参数：microapp java.lang.String parameter
 2019年10月08日 00:07:03  信息 : 		服务命令：checkMicroAppVersions
@@ -37,7 +37,7 @@
 2019年10月08日 00:07:25  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
 2019年10月08日 00:07:25  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
 2019年10月08日 00:07:25  信息 : 系统开放api地址是：/portsapi
-2019年10月08日 00:07:25  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:07:25  信息 : 发现安全服务：/searcher.ports，类型：GberaSearcherPorts
 2019年10月08日 00:07:25  信息 : 		服务命令：checkMicroAppVersions
 2019年10月08日 00:07:25  信息 : 				参数：versions java.util.List content
 2019年10月08日 00:07:25  信息 : 		服务命令：listMicroAppVersion
@@ -53,7 +53,7 @@
 2019年10月08日 00:10:44  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
 2019年10月08日 00:10:44  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
 2019年10月08日 00:10:44  信息 : 系统开放api地址是：/portsapi
-2019年10月08日 00:10:44  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:10:44  信息 : 发现安全服务：/searcher.ports，类型：GberaSearcherPorts
 2019年10月08日 00:10:44  信息 : 		服务命令：checkMicroAppVersions
 2019年10月08日 00:10:44  信息 : 				参数：versions java.util.List content
 2019年10月08日 00:10:44  信息 : 		服务命令：listMicroAppVersion
@@ -69,7 +69,7 @@
 2019年10月08日 00:33:19  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
 2019年10月08日 00:33:19  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
 2019年10月08日 00:33:19  信息 : 系统开放api地址是：/portsapi
-2019年10月08日 00:33:19  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:33:19  信息 : 发现安全服务：/searcher.ports，类型：GberaSearcherPorts
 2019年10月08日 00:33:19  信息 : 		服务命令：checkMicroAppVersions
 2019年10月08日 00:33:19  信息 : 				参数：versions java.util.List content
 2019年10月08日 00:33:19  信息 : 		服务命令：listMicroAppVersion
@@ -85,7 +85,7 @@
 2019年10月08日 00:55:15  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
 2019年10月08日 00:55:15  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
 2019年10月08日 00:55:15  信息 : 系统开放api地址是：/portsapi
-2019年10月08日 00:55:15  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 00:55:15  信息 : 发现安全服务：/searcher.ports，类型：GberaSearcherPorts
 2019年10月08日 00:55:15  信息 : 		服务命令：getMicroAppInfo
 2019年10月08日 00:55:15  信息 : 				参数：microapp java.lang.String parameter
 2019年10月08日 00:55:15  信息 : 		服务命令：checkMicroAppVersions
@@ -101,7 +101,7 @@
 2019年10月08日 01:43:13  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
 2019年10月08日 01:43:13  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
 2019年10月08日 01:43:13  信息 : 系统开放api地址是：/portsapi
-2019年10月08日 01:43:13  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月08日 01:43:13  信息 : 发现安全服务：/searcher.ports，类型：GberaSearcherPorts
 2019年10月08日 01:43:13  信息 : 		服务命令：checkMicroAppVersions
 2019年10月08日 01:43:13  信息 : 				参数：versions java.util.List content
 2019年10月08日 01:43:13  信息 : 		服务命令：listMicroAppVersion
@@ -128,7 +128,7 @@
 2019年10月09日 02:34:48  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
 2019年10月09日 02:34:48  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
 2019年10月09日 02:34:48  信息 : 系统开放api地址是：/portsapi
-2019年10月09日 02:34:48  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月09日 02:34:48  信息 : 发现安全服务：/searcher.ports，类型：GberaSearcherPorts
 2019年10月09日 02:34:48  信息 : 		服务命令：checkMicroAppVersions
 2019年10月09日 02:34:48  信息 : 				参数：versions java.util.List content
 2019年10月09日 02:34:48  信息 : 		服务命令：listMicroAppVersion
@@ -152,7 +152,7 @@
 2019年10月09日 02:51:35  信息 : 		openportInterface=cj.studio.openport.client.IRequestAdapter remoteOpenportsUrl=ports://usercenter.com/uc/authentication.service token=
 2019年10月09日 02:51:35  信息: cj.studio.openport.client.DefaultOpenportsServicesMonitor - Openports 初始化完成
 2019年10月09日 02:51:35  信息 : 系统开放api地址是：/portsapi
-2019年10月09日 02:51:35  信息 : 发现安全服务：/searcher.ports，类型：cj.netos.microapp.program.ports.GberaSearcherPorts
+2019年10月09日 02:51:35  信息 : 发现安全服务：/searcher.ports，类型：GberaSearcherPorts
 2019年10月09日 02:51:35  信息 : 		服务命令：checkMicroAppVersions
 2019年10月09日 02:51:35  信息 : 				参数：versions java.util.List content
 2019年10月09日 02:51:35  信息 : 		服务命令：listMicroAppVersion
